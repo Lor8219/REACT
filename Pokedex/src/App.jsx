@@ -1,11 +1,11 @@
 import PokemonCard from "./components/PokemonCard"
 
-function PokemonCard() {
+function App() {
   return (
     <div>
       <PokemonCard />
     </div>
-  );
+  )
 }
 
 export default App;
