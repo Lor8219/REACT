@@ -1,14 +1,16 @@
 function PokemonCard(props){
-  console.log(props.pokemon.imgSrc);
+  const pokemon= props.pokemon;
 
   return(
+    <div>
     <figure>
-      {props.pokemon.imgSrc? (
-      <img src={props.pokemon.imgSrc} alt={props.pokemon.name} ></img>
+      {pokemon.imgSrc? (
+      <img src={pokemon.imgSrc} alt={pokemon.name} ></img>
       ) : (<p>???</p>)}
-      <figcaption>{props.pokemon.name}</figcaption>
+      <figcaption>{pokemon.name}</figcaption>
     </figure>
-  )
+    </div>
+  );
 }
 
 export default PokemonCard;
